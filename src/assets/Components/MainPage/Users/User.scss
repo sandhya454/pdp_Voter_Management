@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.Users{
+    height: 78vh;
+    width: 75vw;
+    font-family:Poppins;
+    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius:1vw;
+    margin-left: 1vw;
+    overflow-y: scroll;
+    .user-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw;
+    
+    .heading{
+        font-size: 2vw;
+        font-weight: 500;
+        color: #332A7C;
+        cursor: pointer;
+    }
+    .btn{
+        width: 10vw;
+        border-radius: 1vw;
+        background:linear-gradient(to right,#4B5EA6,#5E71B8,#4156A5);
+        border: none;
+        padding: 1.5vw;
+        color: white;
+        font-size: 1vw;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+.user-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    table{
+        
+        width: 70vw;
+        box-shadow: 2px 2px 2px 2px #e2e0e0;
+        border-radius: 2vw;
+       
+        thead{
+            border-radius: 2vw;
+            font-weight: 500;
+            background-color: #EFF0F5;
+            color: #617099;
+            th{
+                padding: 1vw;
+                font-size: 1.3vw;
+                
+            }
+            
+        }
+        tbody{
+             
+            tr{                   
+                text-align: center; 
+                                         
+               td{
+                font-size: 1.2vw;
+                color: #2A303F;
+                padding: 1vw;
+               }
+            }
+        }
+    }
+
+}
+
+.user-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 1.5vw;  
+    flex-direction: column;
+   
+    form{       
+        .details{                               
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: -1.0vw;
+            column-gap: 0;
+            color:#747373;
+            left: 16vw;                    
+            .elements{
+                label{
+                    margin: 1vw;
+                    padding: 1vw 0.2vw ;
+                }
+                .info{
+                    margin: 0.5vw;
+                    padding: 1vw;
+                    border-radius: 0.6vw;
+                    border: 2px solid #d1c8c8;
+                }
+            }
+            
+        }
+        .submit-btn{
+             display: flex;
+             align-items: center;
+             text-align: center !important;
+            width: 8vw;
+            margin: auto;
+            padding: 0.7vw;
+            border-radius: 1vw;
+            background:linear-gradient(to right,#4B5EA6,#5E71B8,#4156A5); 
+            cursor: pointer; 
+            font-weight: bold;
+            border: none;
+            color: white;
+            justify-content: center
+    }
+    }
+
+}
+
+}
+.Users::-webkit-scrollbar{
+        display: none;
+}
+@media only screen and (max-width:768px){
+    .Users{        
+        height: 80vh;
+        width: 95vw !important;
+        position: relative;
+        .user-list{
+            .heading{
+                font-size: 5vw;
+            }
+            .btn{
+                font-size: 4vw;
+                width: 35vw;
+            }
+        }
+        .user-table{
+        //    position: static;
+            display: block;  
+            max-width: 250vw!important;
+            overflow-x: scroll !important;
+            // max-width: 100vw;
+            margin-left: 1.5vw;
+            // overflow-x: scroll;zx
+               
+            table{
+              position: static;
+               
+                thead{
+                  
+                    tr{
+                        th{
+                            font-size: 3.5vw!important;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        height: 3vh;
+                        td{
+                            font-size: 4.5vw;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        .user-form{
+            form{
+                .details{
+                   
+                    display: block;
+                    font-size: 5vw;
+                    left: 25vw;
+                    padding: 1vw;
+                    .elements{
+                        font-size: 5vw;
+                        .info{
+                            width: 47vw;
+                            padding: 3vw;
+                        }
+                    }
+                }
+                .submit-btn{
+                    width: 25vw !important;                   
+                    font-size: 5vw;  
+                    padding: 5vw !important;                  
+                    text-align: center !important;
+                    height: 4vw !important;
+                    justify-content: center
+                   
+                }
+            }
+        }
+    
+    }
+}

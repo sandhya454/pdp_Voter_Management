@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.login-form{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    font-family:Poppins;
+   
+    .picture{
+        position: relative;
+        background-color: #E6F2FF;
+        width: 50%;
+        .booth-img{
+            position: absolute;
+            width: 500px;
+            height: 623px;
+            left: 250px;
+        }
+    }
+    .basic{
+        position: relative;
+        width: 50%;
+        text-align: center;
+        form{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            h3{
+                font-size: 30px;
+            }
+            p{
+                color: #635A5A;
+                font-size: 14px;
+            }
+            .form-input{
+                margin: 15px;
+                .input{
+                    border-radius: 10px;
+                    padding: 15px;
+                    width: 200px;
+                    border: none;
+                    box-shadow: 2px 2px 2px 2px gainsboro;
+                }
+            }
+            button{
+                margin-top: 5px;
+                border: none;
+                width: 150px;
+                padding: 15px;
+                border-radius: 10px;
+                color: white;
+                background: linear-gradient(#4B5EA6,#5E71B8,#4156A5 );
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .login-form{
+        height: 100vh;
+        display: block;
+        .picture{
+            position: static;
+            width: 100%;
+            border-radius: 0px 0px 300px 300px;
+            .booth-img{
+                position: static;
+                height: 298px;
+                width: 307px;
+            }
+        }
+        .basic{
+            position: static;
+            width: 100%;
+            form{
+                position: static;
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

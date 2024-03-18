@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.constituency{
+    font-family: Poppins;
+    width: 75vw;
+    height: 80vh !important;
+    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius:1vw;
+    margin-left: 1vw;   
+    overflow-y: scroll;
+    h2{
+        color:#332A7C;
+        font-size: 2vw;
+        padding: 1vw;                  
+    }
+    .allocated-booths{
+        padding: 1vw;       
+        .cards{            
+        display: grid;
+        grid-template-columns: 1vw 15vw 15vw 15vw 15vw 12vw;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px rgb(190, 190, 190);
+        margin: 1vw 0px;
+        line-height: 7.5vw;
+        color: #40508E;
+        font-size: 1.5vw;
+        border-radius: 1vw;
+            .blue{
+            
+                width: 1vw;
+                height: 7.5vw;
+                background-color:#4D61AD;
+                border-radius: 0.5vw;
+            }
+            .orange{
+               
+                width: 1vw;
+                height: 7.2vw;
+                background-color: #ECA636;
+                border-radius: 0.5vw;
+            }
+            .booths{
+                height: 5vw;
+                font-size: 1.5vw;
+                .num{
+                    position: relative;
+                    top: 1.3vw;
+                    right: 2.5vw;
+                }
+            }
+            .mobileNumber{
+                font-size: 1.3vw;
+                .cellNum{
+                    position: relative;
+                    top: 1.3vw;
+                    right: 7.5vw;
+                }
+            }
+            button{
+                width: 8vw;
+                height: 3.5vw;
+                margin-top: 2.3vw;
+                border: none;
+                background:linear-gradient(to right,#4B5EA6,#5E71B8,#4156A5);
+                color: white;
+                border-radius: 1vw;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
+.constituency::-webkit-scrollbar
+{
+  display: none;
+}
+@media only screen and (max-width:768px){
+    .constituency{
+        width: 97vw !important;
+        height: 80vh !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        h2{
+            font-size: 5vw;
+        }
+        .allocated-booths{  
+            // width: 95%;  
+            margin: 1vw;        
+            .cards{
+                font-size: 5vw;
+                // margin-left: 0.5vw;
+                // margin-right: 0.5vw;
+                margin-top: 4.5vw;
+                height: 40vw;
+                .blue{
+                    display: none;
+                }
+                .orange{
+                    display: none;
+                }
+                display: grid;
+                grid-template-columns: auto auto ;
+                .mobileNumber{
+                    font-size: 5vw;
+                    position: relative;
+                    left: 10vw;
+                    .cellNum{
+                        top: 3.9vw;
+                        font-size: 4vw;
+                        right: 25vw;
+                    }
+                }
+                .booths{
+                    font-size: 5vw;
+                    .num{
+                        top: 5vw;
+                        right: 10vw;
+                    }
+                }
+            }
+            button{
+                position: relative;
+                font-size: 5 !important;
+                width: 30vw !important;
+                padding: 2vw;
+                left: 32vw;
+                height: 10vw!important;
+                // bottom: 1vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.Reports{
+    height: 77vh;
+    width: 75vw;
+    font-family:Poppins;
+    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius:1vw;
+    margin-left: 1vw;
+    h3{
+        font-size: 2vw;
+            font-weight: bold;
+            color: #332A7C;
+    }
+    .Drop-downs{
+        display: grid;
+        grid-template-columns: 18vw 18vw 18vw 18vw;
+        padding-bottom: 1.5vw;
+        font-size: 1.5vw;
+       row-gap: 0.5vw;
+       color: #332A7C;
+      
+        .mini{
+            margin: 0.5vw;
+            select{
+                color: #332A7C;
+                margin: 0.5vw;
+                width: 15vw;
+                padding: 0.5vw;
+                border-radius: 1vw;
+                border: none;
+                box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+            }
+        }
+        p{
+            color: #13224d;
+            font-weight: 700;
+            font-size: 2vw;
+            text-align: center;
+        }
+        .export-btn{
+            margin-top: 2vw;
+            text-align: center;
+            button{
+                width: 9vw;
+                border: 1px solid #332A7C ;
+                color: #332A7C;
+                background-color: white;
+                padding: 0.8vw;
+                font-size: 1.2vw;
+                font-weight: 700;
+            }
+        }
+        .Search{   
+           margin: 2vw 1vw 0vw 1vw;
+            border: 1px solid  #332A7C;
+            width: 16vw;
+            height: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 1vw;
+            .search-bar{          
+                border: none;
+                outline: none;
+                
+            }
+            .search-icon{          
+                font-size: 1.5vw;           
+                color: #332A7C;
+                
+            }
+        
+    }
+      
+    }
+   
+    .report-table{
+        width: 75vw;
+        overflow-x: scroll;
+        overflow-y: scroll;      
+        height: 17vw;
+        table{  
+            width: 400vw;
+            text-align: center;            
+            thead{
+                
+                background-color: #ababad;
+                color: #13224d;
+                font-size: 1.2vw;
+                height: 2vw;
+                             
+            }
+            tbody{
+                tr{
+                    height: 2vw;
+                    td{                       
+                        font-size: 1vw;
+                        color: #2A303F;
+                    }
+                }
+            }
+            
+          
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    .Reports{
+        height: 80vh;
+        width: 100vw !important;
+        .Drop-downs{
+            font-size: 5vw;
+           display: grid;
+           grid-template-columns: 50vw 50vw;
+           column-gap: 1vw;
+           row-gap: 1vw;
+           .mini{
+            select{
+                // width: 60vw;
+                width: 40vw;
+            }
+           }
+        .Search{
+            height: 10vw;
+            width: 42vw;
+            // .search-icon{
+            //     display: none;
+            // }
+        }
+        p{
+            font-size: 5vw;
+        }
+        .export-btn{
+            button{
+                font-size: 5vw;
+                width: 25vw;
+            }
+        }
+        }
+       
+        .report-table{
+            width: 100vw;
+            height: 75vw;
+         
+           table{
+            thead{
+               
+                th{
+                    font-size: 4vw;
+                    height: 10vw;
+                }
+            }
+            tbody{
+                tr{
+                    // height: 3vh;
+                    td{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+           }
+        }
+    }
+}

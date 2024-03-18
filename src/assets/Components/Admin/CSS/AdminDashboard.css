@@ -1,0 +1,54 @@
+.admin-dashboard { 
+   box-sizing: border-box;
+   padding: 2vw;
+}
+.admin-dashboard h2{
+    color: rgb(0, 5, 144);
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+}
+.voter{
+    background-color: rgb(117, 59, 224);
+    color: white;
+}
+.mandal{
+    background-color: rgb(162, 11, 167);
+    color: white;
+}
+.village{
+    background-color: rgb(255, 39, 103);
+    color: white;
+}
+.wards{
+    background-color:indigo;
+    color: white;
+}
+.booths1{
+    background-color: maroon;
+    color: white;
+}
+.box{
+    text-align: center;
+    width: 15vw;
+    height: 8vw ;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px  gray;
+    padding: 1vw;
+   
+}
+@media only screen and (max-width:765px)  {
+    .details{
+        display: grid;
+      grid-template-columns: auto auto;
+      
+    }
+    .box{
+        font-size: 5vw;
+        width: 45vw;
+        height: 20vw;
+        margin: 1vw;
+    }
+}

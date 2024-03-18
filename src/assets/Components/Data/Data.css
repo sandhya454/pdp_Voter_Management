@@ -1,0 +1,54 @@
+.MainContTable{
+    width: 90vw;
+    margin-left: 5%;
+    height:70vh ;
+    overflow: scroll;
+}
+.CountsDiv{
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    padding:1% 5%;
+}
+
+.FiltersDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    gap:5%;
+    margin-top: 1%;
+  
+   
+
+}
+
+.SelectedDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+   
+   
+}
+
+.MandalVillageCont{
+    background-color: rgb(125, 195, 255);
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 0px gray;
+
+  
+    padding:2% 5%;
+}
+.WardsBoothCont{
+    background-color: rgb(125, 195, 255);
+    color:black;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 0px gray;  
+    padding:2% 5%;
+}

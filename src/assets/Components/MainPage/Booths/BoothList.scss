@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.booth-list{
+    font-family: Poppins;
+    position: relative;
+    width: 75vw;
+    height: 78vh;
+    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius:1vw;
+    margin-left: 1vw;
+    overflow-y: scroll;
+   
+    h2{
+        color:#332A7C;
+        font-size: 2vw;
+        padding: 1vw;  
+        cursor: pointer;
+    }
+   
+    .booths{
+        display: grid;
+        grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+        row-gap: 1vw;
+        column-gap: 1.5vw;
+        padding: 0.8vw 3vw;
+       
+        .list{
+            border: none;
+            background-color: #F6E6FB;
+            position: relative;
+            border-radius: 0.8vw;
+            h3{
+                font-size: 3vw;
+                text-align: center;
+                line-height: 5vw;
+                border-bottom: 2px dotted black;
+                                
+            }
+            span{
+                position: absolute;
+                top: 0.9vw;
+                right: 0.8vw;
+                color: #DA0909;
+                background-color: #FFFFFF;
+                width: 1.9vw;
+                height: 1.8vw;
+                border-radius: 0.5vw;
+                box-shadow:2px 2px 2px 2px rgb(233, 230, 230); 
+                .icon{
+                    position: absolute;
+                    top:-0.9vw;
+                    left: 0.3vw;
+                }
+            }
+            p{
+                text-align: center;
+                line-height: 2px;
+            }           
+        }
+      
+     
+    }   
+    .additional-booth{
+        border: 2px dashed gray;
+        text-align: center;
+        height: 25vh;
+        margin: 0.5vw;
+        width: 10vw;
+        span{
+            position: relative;
+            top: 4.5vw;
+            cursor: pointer;
+        }
+        p{
+            color:#968585;
+            line-height: 8vw;
+            font-size: 1vw;
+            cursor: pointer;
+        }       
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        form{
+            
+            select{
+                width: 50vw;
+               
+                padding: 1vw;
+                font-size: 1.5vw;
+                color:  #919191;
+                box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
+                border: none;
+                border-radius: 1vw;
+                
+            }
+        }
+        .btn{
+            position: relative;
+            top: 10vw;
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 15px;
+            background-color:#543efa ;
+            color: white;
+            box-shadow: 2px 2px 2px 2px rgb(196, 193, 193);           
+           
+        }
+    }
+    .booth-list::-webkit-scrollbar
+    {
+    
+      display: none;
+    
+    }
+
+@media only screen and (max-width:768px){
+    .booth-list{
+       overflow-y: scroll;
+       width: 95vw;
+       height: 80vh;
+        h2{
+            text-align: center;
+            font-size: 4vw;
+        }
+    .booths{
+        margin-left: 2vw;
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw 20vw;
+            padding: 0.9vw 2vw;
+            font-size: 3vw;
+            .list{
+                h3{
+                    font-size: 4vw;
+                    border-bottom: 0.2vw dotted black;
+                }
+                span{
+                    width: 3.9vw;
+                    height: 3.8vw;
+
+                    .icon{
+                        top: -2.5vw;
+                        font-size: 3vw;
+                    }
+                }
+                p{
+                    font-size: 3.5vw;
+                }
+            }
+            .additional-booth{
+                height: 11vh !important;
+                width: 20vw;
+            }
+    }
+    form{
+        select{
+            font-size: 4vw;
+            width: 90vw;          
+        }
+    }
+    .btn{
+        position: relative;
+        top: 25vw;
+    }
+    }
+}

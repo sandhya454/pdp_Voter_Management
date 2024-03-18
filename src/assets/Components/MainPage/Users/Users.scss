@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.Users{
+   
+    height: 80vh;
+    width: 70vw;
+    font-family:Poppins;
+    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius:1vw;
+    .user-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        // box-shadow: 1px 1px 1px 1px rgb(172, 170, 170);
+        .heading{
+            font-size: 28px;
+            font-weight: 500;
+            color: #332A7C;
+            cursor: pointer;
+        }
+        .btn{
+            width: 153px;
+            border-radius: 10px;
+            background:linear-gradient(to right,#4B5EA6,#5E71B8,#4156A5);
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+    .user-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        table{
+            position: absolute;
+            top: 50px;
+            width: 95%;
+            box-shadow: 2px 2px 2px 2px #e2e0e0;
+            thead{
+                font-weight: 500;
+                background-color: #EFF0F5;
+                color: #617099;
+                font-size: 18px;
+                height: 58px;
+                
+            }
+            tbody{
+                tr{                   
+                    text-align: center;
+                    padding: 20px;
+                    border: 1px solid #EDE9E9;
+                   td{
+                    font-size: 17px;
+                    color: #2A303F;
+                    padding: 15px;
+                   }
+                }
+            }
+        }
+    }
+    .user-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 3vw;
+        form{
+            .details{
+                position: absolute;
+                top: 20px;
+                display: grid;
+                grid-template-columns: auto auto;
+                row-gap: 10px;
+                column-gap: 20px;
+                color:#919191;
+                left: 280px;
+               
+                .elements{
+                    label{
+                        margin: 10px;
+                        padding: 15px 5px ;
+                    }
+                    .info{
+                        margin: 5px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 2px solid #505050;
+                    }
+                }
+            }
+            .submit-form{
+                position: absolute;
+                top: 370px;
+                left: 420px;
+                button{
+                    color: white;
+                    border: none;
+                    width: 130px;
+                    padding: 15px;
+                    border-radius: 10px;
+                    background:linear-gradient(to right,#4B5EA6,#5E71B8,#4156A5);  
+                    // box-shadow: 3px 3px 3px 3px #dde3f0 inset;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+    }
+}
+@media only screen  and (max-width:1200px){
+    .Users{
+        width: 84vw ;
+    }
+}
+@media only screen and (max-width:768px){
+    .Users{        
+        height: 100vh;
+        width: 100vw;
+        
+        .user-table{
+            position: static;
+            display: block;  
+            max-width: 500px;
+            overflow-x: auto;     
+            table{
+                position: static;
+                width: 95%;
+            }
+        }
+        .user-form{
+            display: block;
+            font-size: 15px;
+            form{
+                
+                .details{
+                    position: absolute;
+                    top: 0px;
+                    left: 82px;
+                    display: block;
+                }
+                .submit-form{
+                    top: 485px;
+                    left: 120px;
+                }
+            }
+        }
+    }
+}
